@@ -336,6 +336,26 @@ header {
     display: block;
 }
 
+.navigaion__mobile {
+    display: none;
+}
+
+.contact__image {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 100%;
+    display: block;
+}
+
+.contact__title {
+    display: block;
+}
+
+.contact__title__mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 1020px) {
     .services__background {
         display: none;
@@ -350,5 +370,50 @@ header {
 
     .first__image {
         display: none;
+    }
+
+    header {
+        width: 100vw;
+        height: 70vh;
+        background: rgb(19, 40, 79);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .header__text {
+        position: relative;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        transform: translate(0%, 0%);
+        margin-top: 30px;
+    }
+    
+    .navigation {
+        display: none;
+    }
+
+    .navigaion__mobile {
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .contact__image {
+        display: none;
+    }
+
+    .contact__title {
+        display: none;
+    }
+
+    .contact__title__mobile {
+        display: block;
+    }
+
+    .contact__data {
+        font-size: 0.7rem;
     }
 }
