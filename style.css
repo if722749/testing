@@ -1,0 +1,136 @@
+@font-face {
+    font-family: montserrat;
+    src: url('./fonts/montserrat/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url('./fonts/montserrat/Montserrat-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url('./fonts/montserrat/Montserrat-Light.otf');
+    font-weight: light;
+}
+
+@font-face {
+    font-family: montserrat-lighter;
+    src: url('./fonts/montserrat/Montserrat-Thin.otf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: montserrat-extra-bold;
+    src: url('./fonts/montserrat/Montserrat-ExtraBold.otf');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Lato2OFL;
+    src: url('./fonts/Lato2OFL/Lato-Regular.ttf');
+}
+
+
+* {
+    font-family: montserrat;
+}
+
+.container {
+    position: relative;
+}
+
+.row {
+    clear: both;
+}
+
+.navigation {
+    color: white; 
+    width: 100vw; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.navigation > div {
+    display: inline-block;
+    margin-left: 5vw;
+}
+
+.main-nav {
+    display: inline-block; 
+    text-align: right; 
+    width: calc(65% - 100px);
+}
+
+.main-nav__items {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block; 
+    margin: 0 30px;
+}
+
+.navigation__moving {
+    background-color: rgb(24, 38, 82);
+    z-index: 1000;
+}
+
+header {
+    width: 100vw;
+    background: rgb(19, 40, 79);
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-img {
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.header__info {
+    color: white;
+    font-family: montserrat;
+    font-weight: lighter;
+}
+
+.header__info__container {
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.header__info__title {
+    font-size: 12px;
+}
+
+.header__info__desc {
+    font-size: 0.7rem;
+}
+
+.header__text {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+}
+
+.header__text__top {
+    color: rgb(0, 154, 255);
+    font-weight: lighter;
+}
+
+.header__text__bottom {
+    color: white;
+}
+
+.header__text p {
+    font-family: Georgia;
+    color: white;
+}
