@@ -32,7 +32,6 @@
     src: url('./fonts/Lato2OFL/Lato-Regular.ttf');
 }
 
-
 * {
     font-family: montserrat;
     scroll-behavior: smooth;
@@ -45,6 +44,13 @@
 
 .row {
     clear: both;
+    padding: 0; 
+    margin: 0;
+}
+
+.col-12 {
+    margin: 0;
+    padding: 0;
 }
 
 .navigation {
@@ -150,6 +156,7 @@ header {
     width: 100%; 
     position: absolute;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .our-job__text {
@@ -232,4 +239,116 @@ header {
 
 .services__row b {
     font-size: 0.9rem;
+}
+
+.newsletter__parallax {
+    background-image: url("./assets/images/NEWSLETTER.png");
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+.newsletter__mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 60, 126, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.newsletter__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.newsletter__title h3 {
+    font-weight: bolder;
+}
+
+.newsletter__title p {
+    font-weight: lighter;
+}
+
+.newsletter__title input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    z-index: 40;
+    /* width: 600px; */
+}
+
+.newsletter__input:focus {
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder .newsletter__input { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.newsletter__button {
+    padding: 0 8px; 
+    background-color: rgb(0, 123, 221);
+}
+
+.contact__text {
+    font-size: 1rem;
+}
+
+.contact__data {
+    font-size: 1rem;
+}
+
+.footer__services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__services ul li:before {
+    content: url('./assets/icons/bullet.svg');
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.footer__image {
+    width: 100%;
+}
+
+.first__image {
+    display: block;
+}
+
+.services__background {
+    display: block;
+}
+
+@media only screen and (max-width: 1020px) {
+    .services__background {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .footer__image {
+        max-width: 20%;
+
+    }
+
+    .first__image {
+        display: none;
+    }
 }
