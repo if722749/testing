@@ -181,6 +181,55 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 300px;
     position: relative;
+}
+
+.about-us {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.center-column {
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+
+.center-column > img {
+    width: 100%; 
+    max-width: 100%;
+}
+
+.about-us__title {
+    display: inline-block; 
+    font-size: 1.3rem; 
+    vertical-align: middle; 
+    padding-left: 7px;
+}
+
+.services__background {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.services__title {
+    font-weight: bold;
+
+}
+
+.services__title > img {
+    border-top: 3px solid rgb(0, 110, 220); padding: 10px 10px 10px;
+}
+
+.services__row p {
+    color: #909090;
+    font-size: 0.7rem;
+}
+
+.services__row b {
+    font-size: 0.9rem;
 }
