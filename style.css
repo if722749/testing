@@ -174,3 +174,13 @@ header {
     margin-left: 42px;
 }
 
+.parallax {
+    background-image: url("./assets/images/triangles-background.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 300px;
+    position: relative;
+}
